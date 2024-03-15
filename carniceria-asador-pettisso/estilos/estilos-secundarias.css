@@ -1,0 +1,507 @@
+html{
+    background-color: rgba(241, 229, 206, 0.592);
+    font-family: Arial, sans-serif;
+}
+
+
+html, body{
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+}
+
+/*CABECERA SECUNDARIAS*/
+header {
+    background: linear-gradient(to bottom, black, #520d0d, black);
+    color:rgba(241, 229, 206);;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 60px;
+}
+
+#logo {
+    height: 140px; 
+    margin-right: 15px; 
+    border-radius: 5%;
+}
+
+/*PIE DE PÁGINA*/
+footer {
+    background: linear-gradient(to right, black,#333333, black);
+    color: white;
+    text-align: justify;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content, .footer-social-media {
+    padding: 15px;
+    border-right: 1px solid white; 
+    text-align: justify;
+}
+
+
+
+.footer-social-media {
+    border-right: none; 
+    padding-left: 50px;
+    text-align: center;
+}
+
+.iconos-redes{
+    width: 80px;
+    height: auto;
+}
+
+/*Mapa de navegación secundarias*/
+#principal-secundarias {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+#menu-navegacion-secundarias {
+    width: 10%; 
+    height: 100vh; 
+    border-right: 5px solid black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+}
+
+nav{    
+    font-size: 22px;
+    text-align: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline; 
+}
+nav img{
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+}
+
+/*CONTENIDO PRINCIPAL CARNICERÍA*/
+h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+p {
+    font-size: 22px;
+}
+
+#contenido-secundarias {
+    width: 90%;
+    padding: 0;
+    margin: 0;
+}
+
+#contenido-secundarias p{
+    text-align: justify;
+}
+
+#texto-contenido-carniceria{
+    padding: 20px;
+    margin: 20px;
+}
+
+#texto-contenido-carniceria > div {
+    display: flex;
+    align-items: center;
+}
+
+#texto-contenido-carniceria .texto {
+    width: 80%;
+    padding: 20px;
+    display: block;
+    flex: 1;
+}
+
+#texto-contenido-carniceria .texto h3{
+    text-align: justify;
+}
+
+#texto-contenido-carniceria .imagen {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}    
+
+#texto-contenido-carniceria .imagen img{
+    width: 70%;
+    border-radius: 40%;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    display: block;
+}
+
+#texto-contenido-carniceria div > div {
+    width: 50%; 
+}
+
+/*Exhibición de fotos carnicería*/
+h3{
+    text-align: center;
+}
+
+#exhibicion-de-fotos {   
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    margin-bottom: 40px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    background-image: url('fondo-exhibicion.jpg'); 
+    background-size: cover; 
+    background-position: center;  
+}
+
+#exhibicion-de-fotos img{
+    width: 30%;
+    border: 3px solid rgba(0, 0, 0, 0.74);
+}
+
+#exhibicion-de-fotos img:not(.imagen-activa) {
+    display: none;
+}
+
+.anterior, .siguiente {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    z-index: 1;
+}
+
+.anterior {
+    left: 30%;
+}
+
+.siguiente {
+    right: 30%;
+}
+
+/*CONTENIDO ASADOR*/
+/*CABECERA SECUNDARIAS*/
+#cabecera-asador {
+    background: linear-gradient(to bottom, black, #ba5a00, black);
+    color:rgba(241, 229, 206);;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#contenido-asador{
+    width: 90%;
+}
+
+/*presentacion asador*/
+#presentacion-asador {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
+}
+
+.columna-parrafos {
+    flex: 0 0 30%;
+    align-items: center;
+    text-align: center;
+}
+
+.columna-video{
+    flex: 0 0 20%;
+    align-items: center;
+    text-align: center;
+}
+
+video {
+    height: 60vh;
+    width: auto;
+    border: 5px solid black;
+    border-radius: 5%;
+    margin-left: 50px;
+}
+
+#presentacion-asador img{
+    width: 55%;
+    height: 60vh;
+    border-radius: 10%;
+    border: 5px solid black;
+}
+
+#presentacion-asador p{
+    font-size: 24px;
+    text-align: left;
+}
+
+
+/*menus de pollos*/
+#menu-de-pollos {
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-contenedor-pollos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    width: calc(20% - 20px); 
+    margin-bottom: 20px;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+.menu-item img {
+    width: 80%;
+    height: auto;
+    border-radius: 5%;
+    border: 3px solid black;
+}
+
+.menu-item h3 {
+    margin-top: 10px;
+}
+
+.menu-item p {
+    font-size: 14px;
+}
+
+/*menus de asados especiales*/
+#menus-de-asados-especiales {
+    text-align: center;
+    padding: 20px;
+}
+.menu-contenedor-asados {
+    display: flex;
+    justify-content: space-around; 
+    margin-bottom: 20px; 
+}
+
+.menu-asados-item {
+    flex-basis: calc(33.33%);
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.menu-asados-item img {
+    width: 75%;
+    height: 75%;
+    border-radius: 8px;
+    border: 5px solid black;
+}
+
+.menu-asados-item h3 {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+/*raciones*/
+#raciones {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    width: 30%; /* Ancho del div */
+    margin: auto; /* Margen automático para centrar horizontalmente */
+    margin-bottom: 20px;
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+#lista-de-raciones ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lista-de-raciones li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 25px;
+}
+
+#lista-de-raciones li:last-child {
+    border-bottom: none;
+}
+
+#lista-de-raciones li::before {
+    content: "•";
+    margin-right: 10px;
+    color: #ba5a00; 
+    font-weight: bold;
+}
+
+#croquetas {
+    list-style-type: none;
+    padding-left: 10%;
+    padding: 0;
+    margin: 0;
+}
+
+#croquetas li::before {
+    content: "•";
+    margin-right: 10px;
+    color: #ba5a006b; /* Cambia el color del punto de la lista */
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+/*CONTENIDO CACHOPOS*/
+#cabecera-cachopos {
+    background: linear-gradient(to bottom, black, #3f2001, black);
+    color:rgba(241, 229, 206);;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/*Cachopos*/
+#contenido-cachopo{
+    width: 100%;
+}
+#cachopos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#cachopos div{
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagen-cachopo{
+    width: 45%;
+}
+
+#imagen-cachopo img{
+    width: 60%;
+    height: auto;
+    border-radius: 5%;
+    border: 5px solid black;
+}
+
+#lista-de-cachopos {
+    width: 30%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    margin-right: 10%;
+}
+
+#lista-de-cachopos ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#lista-de-cachopos li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 25px;
+    text-align: justify;
+}
+
+#lista-de-cachopos li:last-child {
+    border-bottom: none;
+}
+
+#lista-de-cachopos li::before {
+    content: "•";
+    margin-right: 10px;
+    color: #ba5a00; 
+    font-weight: bold;
+}
+
+/*elaborados*/
+
+
+/*CONTACTO*/
+#cabecera-contacto {
+    background: linear-gradient(to bottom, black, #5f5043, black);
+    color:rgba(241, 229, 206);;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#contenido-contacto{
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#informacion-contacto ul{
+    list-style-type: none;
+}
+
+#informacion-contacto iframe{
+    border: 5px solid rgba(0, 0, 0, 0.664);
+}
